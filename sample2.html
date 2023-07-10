@@ -37,14 +37,14 @@
 
         // 箱を作成(原点に作成)
         var geometry = new THREE.BoxGeometry(300, 300, 300);
-        var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
+        var material = new THREE.MeshPhongMaterial({ color: ffa07a });
         var box = new THREE.Mesh(geometry, material);
         scene.add(box);
 
         // texture作成
         var textureLoader = new THREE.TextureLoader();
-        var suntexture = textureLoader.load("img/sun.png");
-        var startexture = textureLoader.load("img/star.png");
+        var suntexture = textureLoader.load("sun.png");
+        var startexture = textureLoader.load("star.png");
 
         // 平面（ポリゴン）を作成
         var sungeometry = new THREE.PlaneGeometry(200,200);
