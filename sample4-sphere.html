@@ -43,7 +43,7 @@
         const group = new THREE.Group();
         scene.add(group);
         const Geometry = new THREE.SphereGeometry(5,32,32);
-        const Material = new THREE.MeshPhongMaterial();
+        const Material = new THREE.MeshMaterial();
 
         for (let i = 0; i < 1000; i++) {
           const mesh = new THREE.Mesh(Geometry, Material);
