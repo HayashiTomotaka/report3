@@ -42,8 +42,8 @@
         // グループを作成
         const group = new THREE.Group();
         scene.add(group);
-        const sphereGeometry = new THREE.SphereGeometry(50, 50, 50, 50);
-        const sphereMaterial = new THREE.MeshMaterial();
+        const Geometry = new THREE.SphereGeometry(50, 50, 50, 50);
+        const Material = new THREE.MeshMaterial();
 
         for (let i = 0; i < 1000; i++) {
           const mesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
