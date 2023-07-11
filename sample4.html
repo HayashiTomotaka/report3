@@ -42,12 +42,12 @@
         // グループを作成
         const group = new THREE.Group();
         scene.add(group);
-        const geometry = new THREE.BoxGeometry(50, 50, 50);
+        const geometry = new THREE.SphereGeometry(50, 50, 50);
         //const geometry = new THREE.BoxBufferGeometry(50, 50, 50);
         const material = new THREE.MeshStandardMaterial();
 
         for (let i = 0; i < 1000; i++) {
-          const mesh = new THREE.Mesh(geometry, material);
+          const mesh = new THREE.Mesh(sphereGeometry, spherematerial);
           mesh.position.x = (Math.random() - 0.5) * 2000;
           mesh.position.y = (Math.random() - 0.5) * 2000;
           mesh.position.z = (Math.random() - 0.5) * 2000;
